@@ -1,0 +1,14 @@
+{
+  "name": "Text highlighter",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "The first extension that I made.",
+  "minimum_chrome_version": "16.0.884",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+   "file://*", "experimental", "tabs", "http://*/*", "https://*/*"
+  ]
+}
