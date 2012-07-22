@@ -9,10 +9,6 @@ function loader() {
 };
 
 
-var uid = 'se4567ujhgfrt';
-var highlightFront = "<SPAN style='BACKGROUND-COLOR: #ffff00' name='" + uid + "'>";
-var highlightBack = "</SPAN name='" + uid + "'>"
-
 
 // example function: add selected words to the current page
 function addSelection () {
