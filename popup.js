@@ -9,7 +9,6 @@ function loader() {
 };
 
 
-
 // example function: add selected words to the current page
 function addSelection () {
     var selection = document.getElementById('text0').value;

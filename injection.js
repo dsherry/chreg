@@ -17,16 +17,22 @@ function highlight(text, substr) {
 // remove all related SPAN occurences
 function unhighlight(text) {
     // FONT starts
-    text.replace(highlightFront, '');
+    console.log(highlightFront);
+    console.log(highlightBack);
+    text = text.replace(new RegExp(highlightFront, 'g'), 'blank');
     // FONT ends
-    text.replace(highlightBack, '');
+    text = text.replace(new RegExp(highlightBack, 'g'), ' ');
+    return text;
 }
 
 function main () {
+    // first, remove previous highlighting
+    document.body.innerHTML = unhighlight(document.body.innerHTML);
     // a debugging test
     document.body.innerHTML = document.body.innerHTML + " TEST.";
     // get the search pattern from the text box
     var pattern = scriptOptions['sel'];
+    console.log(pattern);
     document.body.bgColor = 'orange';
     document.body.innerHTML = doHighlight(document.body.innerHTML, pattern, highlightFront, highlightBack);
     // EOF debugging
@@ -34,6 +40,9 @@ function main () {
 }
 
 // call main
+//var j = 'just';
+//document.body.innerHTML = document.body.innerHTML.replace(new RegExp(j, 'g'), 'VAR');
+//console.log(j);
 main();
 
 
