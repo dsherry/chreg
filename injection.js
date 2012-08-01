@@ -87,6 +87,8 @@ function unhighlight(node) {
 	if (node.nodeType == 3) { // text node
 		pn = node.parentNode;
 		if( pn.className == "searchword" ) {
+		    // TODO just delete "node" instead
+		    // pn.removeChild(node);
 			prevSib = pn.previousSibling;
 			nextSib = pn.nextSibling;
 			nextSib.nodeValue = prevSib.nodeValue + node.nodeValue + nextSib.nodeValue;
