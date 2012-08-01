@@ -1,17 +1,3 @@
-// Author: Dylan Sherry (email:sharshofski@gmail.com)
-// Released in 2012 under the MIT license
-
-// this code is injected into the current tab
-
-
-// constants for highlighting
-var uid = 'se4567ujhgfrt';
-var highlightFront = "<font style='BACKGROUND-COLOR: #ffff00' name='" + uid + "'>";
-var highlightBack = "</font name='" + uid + "'>";
-
-// the previous pattern state
-var previousPattern;
-
 /* New from Rob Nitti, who credits 
  * http://bytes.com/groups/javascript/145532-replace-french-characters-form-inp
  * The code finds accented vowels and replaces them with their unaccented version. */
@@ -118,25 +104,3 @@ function localSearchHighlight(searchStr,doc) {
         	}
 	}
 }
-
-function main () {
-    // first, remove previous highlighting
-    unhighlight(document.body);
-    // a debugging test
-    document.body.innerHTML = document.body.innerHTML + " TEST.";
-    // get the search pattern from the text box
-    var pattern = scriptOptions['pattern'];
-    console.log(pattern);
-    document.body.bgColor = 'orange';
-    // document.body.innerHTML = doHighlight(document.body.innerHTML, pattern, highlightFront, highlightBack);
-    if (!(pattern == '')) {
-	var whitespacePattern = new RegExp("\\s");
-	if (!(whitespacePattern.test(pattern))) {
-	    highlightWord(document.body, pattern, document);
-	}
-    }
-    // EOF debugging
-    document.body.bgColor = 'green';
-}
-
-main();
