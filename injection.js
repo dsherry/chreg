@@ -88,12 +88,10 @@ function unhighlight(node) {
 		pn = node.parentNode;
 		if( pn.className == "searchword" ) {
 		    // TODO just delete "node" instead
-		    // pn.removeChild(node);
-			prevSib = pn.previousSibling;
-			nextSib = pn.nextSibling;
-			nextSib.nodeValue = prevSib.nodeValue + node.nodeValue + nextSib.nodeValue;
-			prevSib.nodeValue = '';
-			node.nodeValue = '';
+		    prevSib = pn.previousSibling;
+		    nextSib = pn.nextSibling;
+		    nextSib.nodeValue = node.nodeValue + nextSib.nodeValue;
+		    pn.parentNode.removeChild(pn);
 		}
 	}
 }
