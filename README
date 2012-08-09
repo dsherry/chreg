@@ -18,3 +18,7 @@ http://www.tedpavlic.com/post_simple_inpage_highlighting_example.php
 	<input type="button" value="Highlight" onclick="localSearchHighlight('?h=' + document.searchhi_example.h.value);" />
 	<input type="button" value="Remove Highlight" onclick="unhighlight(document.getElementsByTagName('body')[0])" />
 </form>
+
+PERFECT:
+https://github.com/jbr/jQuery.highlightRegex/blob/master/README.md
+http://jbr.github.com/jQuery.highlightRegex/

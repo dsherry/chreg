@@ -51,6 +51,7 @@ function highlightWord(node,word,doc) {
 	if (node.nodeType == 3) { // text node
 		tempNodeVal = stripVowelAccent(node.nodeValue.toLowerCase());
 		tempWordVal = stripVowelAccent(word.toLowerCase());
+		// TODO(Dylan) regex code here
 		if (tempNodeVal.indexOf(tempWordVal) != -1) {
 			pn = node.parentNode;
 			if (pn.className != "searchword") {
