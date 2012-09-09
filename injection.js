@@ -75,6 +75,43 @@ function highlightWord(node,word,doc) {
     }
 }
 
+// the current position in the file (an array of indices)
+var currentPosition;
+
+// highlight only the next word
+function highlightNext(node, word, doc) {
+    // the new position that will overwrite currentPosition.
+    var newPosition;
+    // have we found the next word yet?
+    var done = false;
+
+    doc = typeof(doc) != 'undefined' ? doc : document;
+    // TODO here's the point of entry for the single-word find.
+    // first, start at position where we left off last time
+    // children = node.getChildren
+    // if children.length - 1 < currentPosition[currentDepth] { // used in recursion to indicate how many layers in we are
+    //     // there must have been an error. do something about it...
+    // }
+    // start where we left off now
+    // for child in children[currentPosition[currentDepth]:]:
+    //     if done {
+    //         return;
+    //     }
+    //     if childType == 3 {
+    //         use regex
+    //         if match {
+    //             currentPosition = newPosition
+    //             highlight the text
+    //             done = true; // signal that the run is finished
+    //             return;
+    //         }
+    //     } else {
+    //         highlightNext(child, word, doc)
+    //     }
+    // }
+    
+}
+
 function unhighlight(node) {
     // Iterate into this nodes childNodes
     if (node.hasChildNodes) {
