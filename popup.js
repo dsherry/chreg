@@ -14,8 +14,8 @@ function loader() {
     chrome.tabs.executeScript(null, {code: "document.head.innerHTML = document.head.innerHTML + \
 '\
 <style><!-- \
-    SPAN.searchword { background-color:yellow; }\
-    // -->\
+SPAN.searchword { background-color:yellow; }\
+// -->\
 </style>\
 <script src=\"searchhi/searchhi_slim.js\" type=\"text/javascript\" language=\"JavaScript\"></script>\
 '\
