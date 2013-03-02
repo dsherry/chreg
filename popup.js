@@ -10,6 +10,7 @@ var debug=true;
 
 function loader() {
     document.getElementById('highlight0').onclick = highlightSelection;
+    document.getElementById('text0').onkeyup = highlightSelection;
     // inject style and reference to scripthi
     chrome.tabs.executeScript(null, {code: "document.head.innerHTML = document.head.innerHTML + \
 '\

@@ -1,5 +1,5 @@
 {
-  "name": "Text highlighter",
+  "name": "Chreg Regular Expression Find and Replace",
   "version": "1.0",
   "manifest_version": 2,
   "description": "The first extension that I made.",
@@ -9,6 +9,6 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-   "file://*", "experimental", "tabs", "http://*/*", "https://*/*"
+   "file://*", "experimental", "tabs", "http://*/*", "https://*/*, chrome-devtools://*"
   ]
 }

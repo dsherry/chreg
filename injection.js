@@ -174,7 +174,7 @@ function main () {
 	}
     }
     // EOF debugging
-    document.body.bgColor = 'green';
+    document.body.bgColor = 'blue';
 }
 
 main();
