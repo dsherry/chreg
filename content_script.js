@@ -5,14 +5,13 @@ $('head').append('<style>\
       text-decoration: underline;\
       }\
     </style>');
-$('body').append('<h1>Test</h1>');
+$('body').append('<br>Starting... ');
 
 //$(function() {
 //    alert('Yay im an extension :)');
 //});
 
 function doHighlighting () {
-    // var pattern = $('#text0').val();
     var pattern = scriptOptions['pattern'];
     var regex;
     //$('#regex-section').highlightRegex();
@@ -22,7 +21,6 @@ function doHighlighting () {
 
     if (typeof regex !== 'undefined') {
 	$('*').removeClass('error');
-	$('body').append($('body').val());
 
 	// if ($('*').val() != '') {
 	// clear old highlighting
@@ -35,4 +33,4 @@ function doHighlighting () {
 
 doHighlighting();
 
-$('body').append('9');
+$('body').append('\tFinished.');
