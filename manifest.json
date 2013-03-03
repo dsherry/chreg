@@ -1,6 +1,6 @@
 {
   "name": "Chreg",
-  "version": "1.0",
+  "version": "0.42",
   "manifest_version": 2,
   "description": "Regular Expression Find and Replace",
   "minimum_chrome_version": "16.0.884",
