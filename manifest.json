@@ -1,18 +1,18 @@
 {
-  "name": "Chreg Regular Expression Find and Replace",
+  "name": "Chreg2",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "The first extension that I made.",
+  "description": "Regular Expression Find and Replace test2",
   "minimum_chrome_version": "16.0.884",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "file://*", "experimental", "tabs", "http://*/*", "https://*/*", "chrome-devtools://*"
+   "file://*", "experimental", "tabs", "http://*/*", "https://*/*"
   ],
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["jquery.min.js"]
-  }]
+    "js": ["jquery.min.js","highlightRegex.min.js"]
+    }]
 }
