@@ -4,39 +4,27 @@
     <title>Text Highlighter Extension's Popup</title>
     <style>
       body {
-        min-width:357px;
+        <!-- min-width:357px; -->
         overflow-x:hidden;
+        background-color:#f2f1f0;
+	border:0px;
       }
-
-      img {
-        margin:5px;
-        border:2px solid black;
-        vertical-align:middle;
-        width:75px;
-        height:75px;
+      text {
+	border:10px solid black;
+      }
+      .highlight {
+	background: yellow;
+	<!-- text-decoration: underline; -->
       }
     </style>
 
     <!-- JavaScript and HTML must be in separate files for security. -->
-    <!-- <script src="jquery.min.js" type="text/javascript"></script> -->
-    <!-- <script src="highlightRegex.min.js" type="text/javascript"></script> -->
     <script src="popup.js" type="text/javascript"></script>
-    <!-- <script src="injection.js" type="text/javascript"></script> -->
-
-    <style>
-      .highlight {
-      background: yellow;
-      text-decoration: underline;
-      }
-    </style>
 
   </head>
   <body>
     <div id="regex_section">
-      <button id="highlight0">Highlighting All!!</button>
-      <form name="myform">Text box!!
-	<input type="text" id="text0" value="text"/>
-      </form>
+      <input type="text" id="text0" value=""/>
     </div>
   </body>
 </html>

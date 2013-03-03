@@ -9,8 +9,8 @@ var previousPattern;
 var debug=true;
 
 function loader() {
-    document.getElementById('highlight0').onclick = highlightSelection;
     document.getElementById('text0').onkeyup = highlightSelection;
+    //document.getElementById('highlight0').onclick = highlightSelection;
     console.log("loader() finished");
 };
 
