@@ -1,16 +1,19 @@
 {
   "name": "Chreg",
-  "version": "1.0",
+  "version": "0.42",
   "manifest_version": 2,
-  "description": "Regular expression find/replace",
+  "description": "Regular Expression Find and Replace",
   "minimum_chrome_version": "16.0.884",
   "permissions": ["tabs"],
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+  "permissions": [
+   "file://*", "experimental", "tabs", "http://*/*", "https://*/*"
+  ],
   "content_scripts": [{
-    "matches": [ "file://*", "http://*/*", "https://*/*"],
-    "js": [ "jquery.min.js", "popup2.js" ],
-  }]
+    "matches": ["<all_urls>"],
+    "js": ["jquery.min.js","highlightRegex.min.js"]
+    }]
 }
