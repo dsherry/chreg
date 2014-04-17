@@ -22,3 +22,6 @@ http://www.tedpavlic.com/post_simple_inpage_highlighting_example.php
 Perfect example:
 https://github.com/jbr/jQuery.highlightRegex/blob/master/README.md
 http://jbr.github.com/jQuery.highlightRegex/
+
+Hmm it looks like this one does what mine would do:
+https://github.com/gsingh93/regex-search
